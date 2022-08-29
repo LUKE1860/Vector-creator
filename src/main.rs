@@ -16,14 +16,16 @@ _=>continue,
 println!("Do you want to sort a vector?");
     io::stdin().read_line(&mut d).expect("W");
     if d.contains("Yes"){
+    r.truncate(r.len()-1);
     r.sort();
     for vector in r.iter(){
-        println!("{}",vector);
+        print!("{}",vector);
     }
     }
     else if d.contains("No"){
+        r.truncate(r.len()-1);
         for vector in r.iter(){
-            println!("{}",vector);
+            print!("{}",vector);
         }
     }
 }
@@ -44,12 +46,14 @@ fn second(){
 println!("Do you want to sort a vector?");
 io::stdin().read_line(&mut d).expect("W");
 if d.contains("Yes"){
+    r.truncate(r.len()-1);
     r.sort_by(|a, b| a.partial_cmp(b).unwrap());
     for vector in r.iter(){
     println!("{}",vector);
     }
 }
 else if d.contains("No"){
+    r.truncate(r.len()-1);
     for vector in r.iter(){
         println!("{}",vector);
     }
@@ -74,12 +78,14 @@ fn third(){
     println!("Do you want to sort a vector?");
     io::stdin().read_line(&mut d).expect("W");
     if d.contains("Yes"){
+    r.truncate(r.len()-1);
     r.sort();
     for vector in r.iter(){
         println!("{}",vector);
     }
     }
     else if d.contains("No"){
+        r.truncate(r.len()-1);
         for vector in r.iter(){
             println!("{}",vector);
         }
@@ -104,15 +110,17 @@ fn fourth(){
     println!("Do you want to sort a vector?");
     io::stdin().read_line(&mut d).expect("W");
     if d.contains("Yes"){
+    r.truncate(r.len()-1);
     r.sort();
     for vector in r.iter(){
         println!("{}",vector);
     }
 }
     else if d.contains("No"){
+    r.truncate(r.len()-1);
     for vector in r.iter(){
     println!("{}",vector);
-        }
+    }
     }
     }
 
